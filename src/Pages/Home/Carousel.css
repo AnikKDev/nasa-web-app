@@ -12,40 +12,54 @@
 }
 
 .carousel-image-container1 {
-    background-image: url('https://images.unsplash.com/photo-1546878347-4d35c66bc4c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=866&q=80');
+    background-image: url('../../images/1-EMIT_Cyprus_Turkey_dust_640x480.jpg');
+    /* background-image: url('https://images.unsplash.com/photo-1546878347-4d35c66bc4c3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=866&q=80'); */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100%;
     display: flex;
     align-items: center;
-    background-color: rgba(76, 74, 74, 0.95);
+    background-color: rgba(0, 0, 0, 0.547);
     background-blend-mode: darken;
     background-attachment: fixed;
 }
 
 .carousel-image-container2 {
-    background-image: url('https://images.unsplash.com/photo-1548253786-0c887c7a5cf2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80');
+    background-image: url('../../images/typhoonmangkhut_viirs_2018256_th.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100%;
     display: flex;
     align-items: center;
-    background-color: rgba(76, 74, 74, 0.95);
+    background-color: rgba(0, 0, 0, 0.558);
     background-blend-mode: darken;
     background-attachment: fixed;
 }
 
 .carousel-image-container3 {
-    background-image: url('https://images.unsplash.com/photo-1619312528245-d001184fcc54?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+    background-image: url('../../images/main-omg.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100%;
     display: flex;
     align-items: center;
-    background-color: rgba(76, 74, 74, 0.95);
+    background-color: rgba(0, 0, 0, 0.558);
+    background-blend-mode: darken;
+    background-attachment: fixed;
+}
+
+.carousel-image-container4 {
+    background-image: url('../../images/15-174-master.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.558);
     background-blend-mode: darken;
     background-attachment: fixed;
 }

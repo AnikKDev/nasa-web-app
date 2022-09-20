@@ -1,5 +1,5 @@
 import React from 'react';
-
+import bg1 from '../../images/tumblr_inline_p2rsnmthfb1tzhl5u_1280.webp';
 const History = () => {
     return (
         <div className='border-1 border-black  my-20 mx-7'>
@@ -13,7 +13,7 @@ const History = () => {
                 </div>
                 <div className='border-1 border-white col-span-2'>
                     {/* image here */}
-                    <img className='h-full' src="https://images.unsplash.com/photo-1549631998-6d554b1402ae?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=928&q=80" alt="" />
+                    <img className='h-full w-full' src={bg1} alt="" />
                 </div>
             </div>
         </div>
