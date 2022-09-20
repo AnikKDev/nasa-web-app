@@ -3,7 +3,10 @@ import BlogsCard from './BlogsCard';
 
 const Blogs = () => {
     return (
-        <div className='mb-20'>
+        <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            className='mb-20'>
             {/* blogs header */}
             <div>
                 <h2 className="text-3xl font-mono text-center">Blogs</h2>

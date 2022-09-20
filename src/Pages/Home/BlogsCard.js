@@ -2,7 +2,10 @@ import React from 'react';
 import './BlogsCard.css';
 const BlogsCard = ({ bgColor, color, source }) => {
     return (
-        <div className="card h-80 lg:card-side bg-base-100 shadow-xl">
+        <div
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+            className="card h-80 lg:card-side bg-base-100 shadow-xl">
             <img src={source} alt="Album" />
             <div className={`card-body ${bgColor} ${color}`}>
                 <h2 className="card-title">MEOWWW!!!</h2>

@@ -2,7 +2,10 @@ import React from 'react';
 import bg1 from '../../images/tumblr_inline_p2rsnmthfb1tzhl5u_1280.webp';
 const History = () => {
     return (
-        <div className='border-1 border-black  my-20 mx-7'>
+        <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className='border-1 border-black  my-20 mx-7'>
             <div className='md:grid md:grid-cols-3 h-full'>
                 <div style={{ color: "#000001d6" }} className='border-2 p-4 py-8 bg-white  '>
                     {/* data here */}
