@@ -5,6 +5,7 @@ import './App.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Quiz from "./Pages/Quiz/Quiz";
+import QuizContent from "./Pages/Quiz/QuizContent";
 function App() {
   AOS.init();
   return (
@@ -12,7 +13,8 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/quiz" element={<Quiz />} />
+        <Route path="/quiz" element={<QuizContent />} />
+        {/* <Route path="/"/> */}
       </Routes>
     </div>
   );

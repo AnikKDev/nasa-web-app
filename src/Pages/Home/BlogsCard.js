@@ -10,7 +10,7 @@ const BlogsCard = ({ bgColor, color, source }) => {
             <div className={`card-body ${bgColor} ${color}`}>
                 <h2 className="card-title">MEOWWW!!!</h2>
                 <div className='my-2'>
-                    <p className='leading-7'>Click the button to listen on Spotiwhy app. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eius autem aliquam unde cumque. Animi omnis nam tenetur ab. Inventore... <span className='font-bold'>Read more</span></p>
+                    <p className='leading-7'>Click the button to listen on Spotiwhy app. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas eius autem aliquam unde cumque. Animi omnis nam tenetur ab. Inventore... <span className='font-bold cursor-pointer underline'>Read more</span></p>
                 </div>
 
             </div>

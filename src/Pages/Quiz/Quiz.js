@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-
+import swal from 'sweetalert';
+import './Quiz.css';
 const Quiz = () => {
     const questions = [
         {
@@ -62,30 +63,46 @@ const Quiz = () => {
             localStorage.setItem('quizScore', score)
             alert('done')
         }
-    }
+    };
     return (
         <div>
-            {
-                showScore ? (<div className='score-section'>You scored {score} out of {questions.length}</div>)
-                    :
-                    (<>
-                        <div className='question-section'>
-                            <div className='question-count'>
-                                <span>Question {currentQuestion + 1}</span>/{questions.length}
-                            </div>
-                            <div className='question-text'>
-                                {questions[currentQuestion]?.questionText}
-                            </div>
-                        </div>
-                        <div className='answer-section'>
-                            {
-                                questions[currentQuestion].answerOptions.map((answers, index) => (
-                                    <button onClick={() => handleAnswerClick(answers.isCorrect)} key={index}>{answers.answerText}</button>
-                                ))
-                            }
 
+            {
+                showScore ? (<div className='flex justify-center items-center flex-col h-72 score-section'>
+
+                    <h2 className='text-3xl my-6'> You scored {score} out of {questions.length}</h2>
+                    <p><small>Please refresh the page to take the quiz againn *</small></p>
+                </div>)
+                    :
+                    (<div className=' grid grid-cols-2'>
+                        <div className='modal-bg-image text-white p-6 leading-7'>
+                            <h3 className="text-2xl">What meow meow?</h3>
+                            <p className='mt-6 leading-7'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit voluptas ratione, nobis odio recusandae vero.</p>
+                            <h3 className="text-2xl">What meow meow?</h3>
+                            <p className='mt-6 leading-7'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit voluptas ratione, nobis odio recusandae vero.</p>
+                            <h3 className="text-2xl">What meow meow?</h3>
+                            <p className='mt-6 leading-7'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit voluptas ratione, nobis odio recusandae vero.</p>
                         </div>
-                    </>)
+                        <div className='w-4/5 mx-auto p-6'>
+                            <div className='question-section mb-16 flex items-center'>
+                                <div>
+                                    <div className='question-count text-3xl'>
+                                        <span className=''>Question {currentQuestion + 1}</span>/{questions.length}
+                                    </div>
+                                    <div className='question-text text-2xl mt-10'>
+                                        {questions[currentQuestion]?.questionText}
+                                    </div>
+                                </div>
+                            </div>
+                            <div className='answer-section'>
+                                {
+                                    questions[currentQuestion].answerOptions.map((answers, index) => (
+                                        <button className='block border-2 border-black text-black hover:bg-black hover:text-white transition-all w-full my-4 p-2 rounded-md' onClick={() => handleAnswerClick(answers.isCorrect)} key={index}>{answers.answerText}</button>
+                                    ))
+                                }
+                            </div>
+                        </div>
+                    </div>)
             }
         </div>
     );
