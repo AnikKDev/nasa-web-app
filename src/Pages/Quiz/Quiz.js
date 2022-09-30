@@ -5,39 +5,39 @@ import './Quiz.css';
 const Quiz = () => {
     const questions = [
         {
-            questionText: 'What is the capital of France?',
+            questionText: 'About how big are sinkholes?',
             answerOptions: [
-                { answerText: 'New York', isCorrect: false },
-                { answerText: 'London', isCorrect: false },
-                { answerText: 'Paris', isCorrect: true },
-                { answerText: 'Dublin', isCorrect: false },
+                { answerText: 'A house', isCorrect: true },
+                { answerText: 'A football', isCorrect: false },
+                { answerText: 'A city', isCorrect: false },
+                { answerText: 'A car', isCorrect: false },
             ],
         },
         {
-            questionText: 'Who is CEO of Tesla?',
+            questionText: 'Why do sinkholes occur?',
             answerOptions: [
-                { answerText: 'Jeff Bezos', isCorrect: false },
-                { answerText: 'Elon Musk', isCorrect: true },
-                { answerText: 'Bill Gates', isCorrect: false },
-                { answerText: 'Tony Stark', isCorrect: false },
+                { answerText: 'Underground animals dig big burrows', isCorrect: false },
+                { answerText: 'Grand water level decreases leading to a cavern', isCorrect: true },
+                { answerText: "Sinkholes aren't real", isCorrect: false },
+                { answerText: 'Heavy raingall seeps underground and makes it weak.', isCorrect: false },
             ],
         },
         {
-            questionText: 'The iPhone was created by which company?',
+            questionText: 'What can we say about the frequency of sinkholes?',
             answerOptions: [
-                { answerText: 'Apple', isCorrect: true },
-                { answerText: 'Intel', isCorrect: false },
-                { answerText: 'Amazon', isCorrect: false },
-                { answerText: 'Microsoft', isCorrect: false },
+                { answerText: "They've been incresasing worldwide.", isCorrect: true },
+                { answerText: "They've been decreasing worldwide.", isCorrect: false },
+                { answerText: "They've been about the same.", isCorrect: false },
+                { answerText: "We don't have enough data.", isCorrect: false },
             ],
         },
         {
-            questionText: 'How many Harry Potter books are there?',
+            questionText: 'How can we reduce their occurances?',
             answerOptions: [
-                { answerText: '1', isCorrect: false },
-                { answerText: '4', isCorrect: false },
-                { answerText: '6', isCorrect: false },
-                { answerText: '7', isCorrect: true },
+                { answerText: "By creating opportnitites for rain.", isCorrect: false },
+                { answerText: 'By reducing ground water extraction.', isCorrect: false },
+                { answerText: 'By tackling global warming.', isCorrect: false },
+                { answerText: "All of the above.", isCorrect: true },
             ],
         },
     ];
@@ -59,9 +59,13 @@ const Quiz = () => {
             }
         }
         else {
+            sessionStorage.setItem('quizScore', score)
             setShowScore(true);
-            localStorage.setItem('quizScore', score)
-            alert('done')
+            swal({
+                icon: "success",
+
+            });
+            window.location()
         }
     };
     return (
@@ -74,15 +78,9 @@ const Quiz = () => {
                     <p><small>Please refresh the page to take the quiz againn *</small></p>
                 </div>)
                     :
-                    (<div className=' grid grid-cols-2'>
-                        <div className='modal-bg-image text-white p-6 leading-7'>
-                            <h3 className="text-2xl">What meow meow?</h3>
-                            <p className='mt-6 leading-7'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit voluptas ratione, nobis odio recusandae vero.</p>
-                            <h3 className="text-2xl">What meow meow?</h3>
-                            <p className='mt-6 leading-7'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit voluptas ratione, nobis odio recusandae vero.</p>
-                            <h3 className="text-2xl">What meow meow?</h3>
-                            <p className='mt-6 leading-7'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit voluptas ratione, nobis odio recusandae vero.</p>
-                        </div>
+                    (<div className=' grid md:grid-cols-2'>
+
+                        <img style={{ height: "553px" }} className="" src="https://media.istockphoto.com/photos/sinkhole-in-sidewalk-picture-id513251419" alt="" />
                         <div className='w-4/5 mx-auto p-6'>
                             <div className='question-section mb-16 flex items-center'>
                                 <div>

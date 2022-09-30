@@ -1,13 +1,14 @@
 import React from 'react';
 import Quiz from '../Quiz/Quiz';
 const QuizContent = () => {
-    const scoreFromStorage = localStorage.getItem('quizScore');
+    const scoreFromStorage = sessionStorage.getItem('quizScore');
+    console.log(scoreFromStorage)
     return (
         <div className='w-4/5 text-justify mx-auto'>
             {/* quiz content container */}
             <div>
                 <div className='flex justify-end mb-6'>
-                    <p className='border-3 border-gray-700 bg-gray-600 text-white p-3 rounded-md'>Total Score: <span className='font-bold'>{scoreFromStorage}</span></p>
+                    <p className='border-3 border-gray-700 bg-gray-600 text-white p-3 rounded-md'>Total Score: <span className='font-bold'>{scoreFromStorage ? scoreFromStorage : scoreFromStorage}</span></p>
                 </div>
                 <div>
                     <h1 className='text-4xl text-center mb-8 text-bold font-sans'>Lorem ipsum dolor sit amet consectetur adipisicing ?</h1>
