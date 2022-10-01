@@ -61,11 +61,9 @@ const Quiz = () => {
         else {
             sessionStorage.setItem('quizScore', score)
             setShowScore(true);
-            swal({
-                icon: "success",
-
-            });
-            window.location()
+            setTimeout(() => {
+                window.location.reload()
+            }, 2000)
         }
     };
     return (
