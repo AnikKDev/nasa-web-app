@@ -9,6 +9,7 @@ import QuizContent from "./Pages/Quiz/QuizContent";
 import Prototype from "./Pages/Prototype/Prototype";
 import Gallery from "./Pages/Gallery/Gallery";
 import Calamities from "./Pages/Disasters/Calamities";
+import Coordinate from "./Pages/Disasters/Coordinate";
 function App() {
   AOS.init();
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route path="/quiz" element={<QuizContent />} />
         <Route path="/prototype" element={<Prototype />} />
         <Route path="/calamities" element={<Calamities />} />
+        <Route path="/coordinate/:id" element={<Coordinate />} />
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </div>

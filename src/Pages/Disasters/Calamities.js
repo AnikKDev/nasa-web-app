@@ -16,7 +16,7 @@ const Events = () => {
                 setIsLoading(false)
             })
     }, []);
-
+    console.log(events)
     if (isLoading) {
         return <LoadingSpinner />
     }
